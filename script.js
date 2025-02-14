@@ -77,6 +77,14 @@ function handleNoClick() {
     yesButton.style.fontSize = `${currentSize * 1.5}px`;
 }
 
+let firstAttempt = true; // Flag to check if it's the first "Yes" click
+
 function handleYesClick() {
-    window.location.href = "yes_page.html";
+    // If it's the first click, redirect to yes_page_2.html
+    if (firstAttempt) {
+        window.location.href = "yes_page_2.html";
+        firstAttempt = false; // Set flag to false after the first click
+    } else {
+        window.location.href = "yes_page.html";
+    }
 }
