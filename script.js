@@ -82,7 +82,7 @@ let firstAttempt = true; // Flag to check if it's the first "Yes" click
 function handleYesClick() {
     // If it's the first click, redirect to yes_page_2.html
     if (firstAttempt) {
-        window.location.href = "yes_page_2.html";
+        window.location.href = "yes_page2.html";
         firstAttempt = false; // Set flag to false after the first click
     } else {
         window.location.href = "yes_page.html";
